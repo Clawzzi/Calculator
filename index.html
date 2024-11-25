@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Здоровий спосіб життя</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Меню -->
+    <nav>
+        <ul>
+            <li><a href="#calculator">Калорійний калькулятор</a></li>
+            <li><a href="#advice">Поради</a></li>
+            <li><a href="#groups">Запис на гуртки</a></li>
+            <li><a href="#journal">Щоденник</a></li>
+        </ul>
+    </nav>
+
+    <!-- Калорійний калькулятор -->
+    <section id="calculator">
+        <h1>Калорійний калькулятор</h1>
+        <p>Введіть продукт чи страву, щоб дізнатися кількість калорій:</p>
+    
+        <input type="text" id="product-name" placeholder="Введіть продукт або страву">
+        <button id="calculate-btn">Порахувати</button>
+    
+        <div id="result">
+            <!-- Результат буде тут -->
+        </div>
+    
+        <h2>Популярні продукти:</h2>
+        <ul>
+            <li>Яблуко </li>
+            <li>Банан </li>
+            <li>Хліб пшеничний </li>
+            <li>Яйце</li>
+            <li>Куряче філе </li>
+            <li>Молоко</li>
+            <li>Творог </li>
+            <li>Печиво</li>
+            <li>Картопля</li>
+            <li>Рис</li>
+        </ul>
+    </section>
+    
+
+    <section id="advice">
+        <h1>Поради для здорового способу життя</h1>
+
+        <div class="advice-card">
+            <h2>Правильне харчування</h2>
+            <p>Правильне харчування є основою здоров'я. Вживайте більше овочів, фруктів та білкових продуктів. Зменшуйте
+                кількість оброблених продуктів та цукру в раціоні.</p>
+        </div>
+
+        <div class="advice-card">
+            <h2>Фізична активність</h2>
+            <p>Регулярні тренування не тільки покращують фізичну форму, але й позитивно впливають на психічне здоров'я.
+                Намагайтеся хоча б 30 хвилин на день активно рухатися.</p>
+        </div>
+
+        <div class="advice-card">
+            <h2>Сон і відпочинок</h2>
+            <p>Достатній і якісний сон важливий для відновлення організму. Старайтеся спати 7-9 годин на добу для
+                підтримки здоров'я та енергії.</p>
+        </div>
+
+        <div class="advice-card">
+            <h2>Гідратація</h2>
+            <p>Пити достатньо води важливо для нормального функціонування організму. Стандартна рекомендація — 8
+                стаканів води на день, але потреби можуть змінюватися в залежності від фізичної активності.</p>
+        </div>
+
+        <div class="advice-card">
+            <h2>Ментальне здоров'я</h2>
+            <p>Стрес і перевтома можуть впливати на фізичне здоров'я. Намагайтеся знаходити час для відпочинку та
+                релаксації, медитації або просто для хобі, яке приносить вам радість.</p>
+        </div>
+    </section>
+    >
+
+    <!-- Запис на гуртки -->
+    <section id="groups">
+        <h1>Запис на гуртки</h1>
+        
+        <form id="groups-form">
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" placeholder="Ваше ім'я" required>
+            
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" placeholder="Ваш email" required>
+            
+            <label for="group">Обрати гурток:</label>
+            <select id="group" required>
+                <option value="">Оберіть гурток</option>
+                <option value="йога">Йога</option>
+                <option value="фітнес">Фітнес</option>
+                <option value="біг">Біг</option>
+                <option value="плавання">Плавання</option>
+                <option value="пилатес">Пілатес</option>
+            </select>
+            
+            <button type="submit">Записатися</button>
+        </form>
+    
+        <h2>Ваші записи на гуртки:</h2>
+        <ul id="groups-list">
+            <!-- Записи користувачів будуть додаватися сюди -->
+        </ul>
+    </section>
+    
+
+    <section id="journal">
+        <h1>Щоденник харчування та спорту</h1>
+        <form id="journal-form">
+            <label for="date">Дата:</label>
+            <input type="date" id="date" required>
+
+            <label for="meal">Прийом їжі / Вправа:</label>
+            <input type="text" id="meal" placeholder="Наприклад, сніданок, біг" required>
+
+            <label for="calories">Калорії / Час (хв):</label>
+            <input type="number" id="calories" placeholder="Наприклад, 300" required>
+
+            <button type="submit">Додати</button>
+        </form>
+
+        <h2>Ваші записи:</h2>
+        <table id="journal-table">
+            <thead>
+                <tr>
+                    <th>Дата</th>
+                    <th>Прийом їжі / Вправа</th>
+                    <th>Калорії / Час</th>
+                    <th>Дії</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Записи будуть додані сюди -->
+            </tbody>
+        </table>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
